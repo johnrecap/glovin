@@ -35,50 +35,48 @@ module.exports = {
                 'xh': { 'min': '0px', 'max': '767px' },
             },
             colors: {
-                // ===== 🌿 HERBAL APOTHECARY THEME =====
+                // ===== 🌸 GLOVIN PINK/ROSE GOLD THEME =====
 
-                // Text Colors - Natural earth tones
-                "text": "#2D3319",              // Deep olive for readability
-                "success": "#4A7C23",           // Fresh herb green
-                "danger": "#8B3A3A",            // Muted red (natural)
-                "focus": "#7A6B4E",             // Warm wood focus
-                "heading": "#1F2611",           // Almost black-green headings
-                "paragraph": "#4A4A3A",         // Earthy gray-brown
+                // Text Colors
+                "text": "#4A4A4A",              // Soft dark gray
+                "success": "#4CAF50",           // Success green
+                "danger": "#E91E63",            // Pink-red
+                "focus": "#D4A373",             // Soft gold
+                "heading": "#333333",           // Dark headings
+                "paragraph": "#666666",         // Medium gray
 
-                // Primary - Deep Forest Green (Main brand color)
-                "primary": "#2D5016",           // Deep herbal green (CTAs, buttons)
-                "primary-light": "#F7F5F0",     // Parchment/paper white
-                "primary-slate": "#E8E4D9",     // Light natural beige
+                // Primary - Rose Pink
+                "primary": "#E8A4B8",           // Rose pink (main)
+                "primary-light": "#FFF5F7",     // Very light pink
+                "primary-slate": "#FDE8EF",     // Light pink bg
 
-                // Secondary - Rich Wood Brown
-                "secondary": "#5C4A32",         // Warm wood brown (header/footer)
+                // Secondary - Gold
+                "secondary": "#D4AF37",         // Gold accent
 
-                // Accent colors for authentic herbal feel
-                "herbal-green": "#4A7C23",      // Fresh leaf green
-                "herbal-cream": "#F5F2E8",      // Old paper cream
-                "herbal-tan": "#C9B896",        // Natural twine/rope
-                "herbal-brown": "#7A5C3E",      // Rich bark brown
-                "herbal-dark": "#2A1F14",       // Dark wood
-                "herbal-gold": "#B8860B",       // Golden honey/spice
-                "herbal-sage": "#9CAF88",       // Soft sage green
+                // Glovin custom colors
+                "glovin-pink": "#F8BBD9",
+                "glovin-rose": "#E8A4B8",
+                "glovin-blush": "#FFE4EC",
+                "glovin-cream": "#FFF9F5",
+                "glovin-gold": "#D4AF37",
 
-                // Keep StoreKing utility colors (mapped to herbal theme)
-                "storeKing-red": "#8B3A3A",     // Natural muted red
-                "storeKing-pink": "#A67C52",    // Warm terracotta
-                "storeKing-cyan": "#5F8A8B",    // Muted teal (herbs in water)
-                "storeKing-gray": "#F5F2E8",    // Cream paper
-                "storeKing-green": "#4A7C23",   // Fresh green
-                "storeKing-slate": "#E8E4D9",   // Light beige
-                "storeKing-yellow": "#B8860B",  // Golden/honey
-                "storeKing-orange": "#C17F3C",  // Turmeric/spice orange
-                "storeKing-purple": "#6B5B73",  // Dried lavender
-                "storeKing-blue": "#4A6670",    // Muted blue-gray
+                // Utility colors (mapped to pink theme)
+                "storeKing-red": "#E91E63",
+                "storeKing-pink": "#F8BBD9",
+                "storeKing-cyan": "#80DEEA",
+                "storeKing-gray": "#FFF9F5",
+                "storeKing-green": "#81C784",
+                "storeKing-slate": "#FDE8EF",
+                "storeKing-yellow": "#FFD700",
+                "storeKing-orange": "#FFB74D",
+                "storeKing-purple": "#CE93D8",
+                "storeKing-blue": "#90CAF9",
 
-                // Admin colors - keep original for clarity
+                // Admin colors - unchanged
                 admin: {
                     red: "#FB4E4E",
                     sky: "#007FE3",
-                    pink: "#FD0063",
+                    pink: "#E8A4B8",
                     blue: "#426EFF",
                     green: "#2AC769",
                     orange: "#F23E14",
