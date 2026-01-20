@@ -1,7 +1,7 @@
 <template>
     <header :class="isSticky == true
-        ? 'fixed top-0 left-0 z-30 w-full shadow-xs bg-[#3D2B1F]'
-        : 'sm:mb-6 sm:shadow-xs bg-[#3D2B1F]'
+        ? 'fixed top-0 left-0 z-30 w-full shadow-xs bg-[#FFF9F5]'
+        : 'sm:mb-6 sm:shadow-xs bg-[#FFF9F5]'
         ">
 
         <div class="container">
@@ -21,7 +21,7 @@
                     <i class="lab-line-search text-xl"></i>
                 </button>
                 <form @submit.prevent="search()"
-                    class="w-full max-w-md h-10 group rounded-3xl hidden lg:flex items-center gap-2 px-4 border border-[#5C4A32] bg-[#2A1F14] transition-all duration-300 focus-within:border-primary focus-within:bg-[#3D2B1F]">
+                    class="w-full max-w-md h-10 group rounded-3xl hidden lg:flex items-center gap-2 px-4 border border-[#E8A4B8] bg-white transition-all duration-300 focus-within:border-primary focus-within:bg-[#FFF5F7]">
                     <button class="lab-line-search text-lg flex-shrink-0"></button>
                     <input type="search" v-model="searchProduct" :placeholder="$t('label.search') + '...'"
                         class="w-full h-full" />
@@ -36,7 +36,7 @@
                         <button id="languagePaper" @click.prevent="handlePaper"
                             class="paper-button flex items-center gap-2 down-arrow">
                             <img :src="language.image" alt="flags" class="w-6 h-6 rounded-full">
-                            <span class="font-semibold capitalize text-white">{{ language.name }}</span>
+                            <span class="font-semibold capitalize text-[#333333]">{{ language.name }}</span>
                         </button>
                         <ul
                             class="paper-content w-40 absolute top-12 ltr:right-0 rtl:left-0 shadow-paper rounded-lg z-10 p-2 bg-white transition-all duration-300 origin-top scale-y-0 group-hover:scale-y-100">
@@ -53,25 +53,25 @@
 
                     <router-link class="flex items-center justify-center gap-2" :to="{ name: 'frontend.wishlist' }">
                         <i
-                            class="lab-line-heart w-6 h-6 text-sm leading-6 text-center rounded-full bg-primary text-white">
+                            class="lab-line-heart w-6 h-6 text-sm leading-6 text-center rounded-full bg-primary text-[#333333]">
                         </i>
 
-                        <span class="font-semibold capitalize text-white"> {{ $t("label.favorite") }}</span>
+                        <span class="font-semibold capitalize text-[#333333]"> {{ $t("label.favorite") }}</span>
                     </router-link>
 
                     <div class="paper-group">
                         <router-link v-if="!logged" :to="{ name: 'auth.login' }" class=" flex items-center gap-2">
                             <i
-                                class="lab-line-user w-6 h-6 text-sm leading-6 text-center rounded-full bg-primary text-white">
+                                class="lab-line-user w-6 h-6 text-sm leading-6 text-center rounded-full bg-primary text-[#333333]">
                             </i>
-                            <span class="font-semibold capitalize text-white"> {{ $t("label.account") }}</span>
+                            <span class="font-semibold capitalize text-[#333333]"> {{ $t("label.account") }}</span>
                         </router-link>
                         <button id="profilePaperBtn" v-else @click.prevent="handlePaper"
                             class="paper-button flex items-center gap-2">
                             <i
-                                class="lab-line-user  w-6 h-6 text-sm  leading-6 text-center rounded-full bg-primary text-white">
+                                class="lab-line-user  w-6 h-6 text-sm  leading-6 text-center rounded-full bg-primary text-[#333333]">
                             </i>
-                            <span class="font-semibold capitalize text-white"> {{ $t("label.account") }}</span>
+                            <span class="font-semibold capitalize text-[#333333]"> {{ $t("label.account") }}</span>
                             <i class="lab-line-chevron-down font-semibold"></i>
                         </button>
                         <div v-if="logged"
@@ -154,7 +154,7 @@
             </div>
         </div>
 
-        <div :class="isScrollingUp ? 'hidden lg:block' : 'hidden'" class="border-t border-[#5C4A32]">
+        <div :class="isScrollingUp ? 'hidden lg:block' : 'hidden'" class="border-t border-[#FDE8EF]">
             <div class="container">
                 <div class="flex items-center justify-between gap-5 h-[74px]">
                     <div class="flex items-center justify-between gap-12">
@@ -186,22 +186,22 @@
                         <nav class="flex items-center gap-8">
                             <router-link :to="{ name: 'frontend.home' }"
                                 :class="checkIsPathAndRoutePathSame('/home') ? 'text-primary' : ''"
-                                class="text-sm font-semibold capitalize text-white transition-all duration-300 hover:text-primary">
+                                class="text-sm font-semibold capitalize text-[#333333] transition-all duration-300 hover:text-primary">
                                 {{ $t("label.home") }}</router-link>
 
                             <router-link :to="{ name: 'frontend.offers' }"
                                 :class="checkIsPathAndRoutePathSame('/offers') ? 'text-primary' : ''"
-                                class="text-sm font-semibold capitalize text-white transition-all duration-300 hover:text-primary">
+                                class="text-sm font-semibold capitalize text-[#333333] transition-all duration-300 hover:text-primary">
                                 {{ $t("label.offers") }}</router-link>
 
                             <router-link :to="{ name: 'frontend.daily.deals' }"
                                 :class="checkIsPathAndRoutePathSame('/daily-deals') ? 'text-primary' : ''"
-                                class="text-sm font-semibold capitalize text-white transition-all duration-300 hover:text-primary">
+                                class="text-sm font-semibold capitalize text-[#333333] transition-all duration-300 hover:text-primary">
                                 {{ $t("label.daily_deals") }}</router-link>
                             <router-link v-if="flashSaleProducts.length > 0"
                                 :class="checkIsPathAndRoutePathSame('/flash-sale') ? 'text-primary' : ''"
                                 :to="{ name: 'frontend.flashSale.products' }"
-                                class="text-sm font-semibold capitalize text-white transition-all duration-300 hover:text-primary">
+                                class="text-sm font-semibold capitalize text-[#333333] transition-all duration-300 hover:text-primary">
                                 {{ $t("label.flash_sale") }}</router-link>
                         </nav>
                     </div>
