@@ -1,7 +1,7 @@
 <template>
     <LoadingComponent :props="loading" />
 
-    <footer class="pt-12 bg-secondary">
+    <footer class="pt-12 bg-[#E8A4B8]">
         <div class="container">
             <div class="row">
                 <div class="col-12 lg:col-4 mb-6 lg:mb-0">
