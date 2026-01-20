@@ -154,7 +154,7 @@
             </div>
         </div>
 
-        <div :class="isScrollingUp ? 'hidden lg:block' : 'hidden'" class="border-t border-[#FDE8EF]">
+        <div :class="isScrollingUp ? 'hidden lg:block' : 'hidden'" class="border-t border-[#FDE8EF] bg-[#FFF9F5]">
             <div class="container">
                 <div class="flex items-center justify-between gap-5 h-[74px]">
                     <div class="flex items-center justify-between gap-12">

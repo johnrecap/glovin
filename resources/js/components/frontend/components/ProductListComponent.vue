@@ -1,6 +1,6 @@
 <template>
     <div v-if="!isSectional && products.length > 0" v-for="product in products"
-        class="sm:p-2 rounded-xl sm:rounded-2xl flex flex-col sm:border sm:border-[#FDE8EF] transition-all duration-300 sm:shadow-[0_4px_15px_rgba(232,164,184,0.2)] sm:hover:shadow-[0_12px_35px_rgba(232,164,184,0.35)] group">
+        class="sm:p-2 rounded-xl sm:rounded-2xl flex flex-col sm:border sm:border-[#FDE8EF] transition-all duration-300 sm:shadow-[0_6px_20px_rgba(232,164,184,0.35)] sm:hover:shadow-[0_15px_45px_rgba(232,164,184,0.5)] group">
         <figure class="relative overflow-hidden rounded-xl flex-shrink-0 isolate cursor-pointer"
             @click.prevent="productDetails(product)">
             <label
@@ -56,7 +56,7 @@
                 }">
                 <SwiperSlide class="mobile:!w-40" v-if="products.length > 0" v-for="product in products">
                     <div
-                        class="sm:p-2 rounded-xl sm:rounded-2xl flex flex-col sm:border sm:border-[#FDE8EF] transition-all duration-300 sm:shadow-[0_4px_15px_rgba(232,164,184,0.2)] sm:hover:shadow-[0_12px_35px_rgba(232,164,184,0.35)] group">
+                        class="sm:p-2 rounded-xl sm:rounded-2xl flex flex-col sm:border sm:border-[#FDE8EF] transition-all duration-300 sm:shadow-[0_6px_20px_rgba(232,164,184,0.35)] sm:hover:shadow-[0_15px_45px_rgba(232,164,184,0.5)] group">
                         <figure class="relative overflow-hidden rounded-xl flex-shrink-0 isolate cursor-pointer"
                             @click.prevent="productDetails(product)">
                             <img :src="product.cover" alt="product"
