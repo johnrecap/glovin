@@ -1,7 +1,7 @@
 <template>
     <header :class="isSticky == true
-        ? 'fixed top-0 left-0 z-30 w-full shadow-xs bg-[#FFF9F5]'
-        : 'sm:mb-6 sm:shadow-xs bg-[#FFF9F5]'
+        ? 'fixed top-0 left-0 z-30 w-full shadow-xs bg-[#E8A4B8]'
+        : 'sm:mb-6 sm:shadow-xs bg-[#E8A4B8]'
         ">
 
         <div class="container">
