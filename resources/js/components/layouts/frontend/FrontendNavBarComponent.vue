@@ -162,7 +162,7 @@
 
                         <div class="paper-group">
                             <button id="navBarCategoryBtn" @click="handlePaper"
-                                class="paper-button flex items-center gap-2 px-4 h-[42px] rounded-lg text-white bg-heading">
+                                class="paper-button flex items-center gap-2 px-4 h-[42px] rounded-lg text-white bg-primary">
                                 <i class="lab-line-category text-xl"></i>
                                 <span class="capitalize font-semibold"> {{ $t("label.browse_category") }}</span>
                                 <i class="lab-line-chevron-down font-semibold"></i>
